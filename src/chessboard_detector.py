@@ -73,21 +73,21 @@ class Chess_Detector:
         x = xs[maxdiffi]
         if self.isblack:
             y = 7 - y
-            x = 7 - x
+            x = x
             
-        square1 = chr(y+97) + str(x + 1)
-        int_square1 = [y, x]
+        square1 = chr(x+97) + str(y + 1)
+        int_square1 = [x, y]
         
         maxdiffi = diffs.index(max(diffs))
         y = ys[maxdiffi]
         x = xs[maxdiffi]
         if self.isblack:
             y = 7 - y
-            x = 7 - x
-        square2 = chr(y+97) + str(x + 1)
-        int_square2 = [y, x]
+            x = x
+        square2 = chr(x+97) + str(y + 1)
+        int_square2 = [x, y]
         
-
+        print(square1, square2)
         legal_moves = list(self.board.legal_moves)
         if chess.Move.from_uci(square1 + square2) in legal_moves:
             move = square1 + square2

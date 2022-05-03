@@ -27,7 +27,7 @@ class ChessBot:
         self.blackleft = blackleft
 
         self.x_offset = 0.14
-        self.y_offset = 0.06
+        self.y_offset = -0.03#-0.06
 
         # Initialize the listeners
         self.tf_listener = tf.TransformListener()
@@ -47,14 +47,14 @@ class ChessBot:
         image = rospy.wait_for_message("/camera/color/image_raw", Image)
         image = self.bridge.imgmsg_to_cv2(image, desired_encoding="passthrough")
 
-        if self.blackleft:
-            corner_tag_names = ['/tag_1', '/tag_0']
-        else:
-            corner_tag_names = ['/tag_0', '/tag_1']
-        _, rot1 = self.tf_listener.lookupTransform('/camera_link', corner_tag_names[0], rospy.Time(0))
-        _, rot2 = self.tf_listener.lookupTransform('/camera_link', corner_tag_names[1], rospy.Time(0))
+        # if self.blackleft:
+        #     corner_tag_names = ['/tag_1', '/tag_0']
+        # else:
+        #     corner_tag_names = ['/tag_0', '/tag_1']
+        # _, rot1 = self.tf_listener.lookupTransform('/camera_link', corner_tag_names[0], rospy.Time(0))
+        # _, rot2 = self.tf_listener.lookupTransform('/camera_link', corner_tag_names[1], rospy.Time(0))
 
-        print(euler_from_quaternion(rot1))
+        # print(euler_from_quaternion(rot1))
 
 
 
@@ -146,7 +146,7 @@ class ChessBot:
 
 
         # Convert them to be relative to the robot's frame
-        pose = [cart_pose[1] + self.x_offset, -cart_pose[0] - self.y_offset, cart_pose[2]]
+        pose = [cart_pose[1] + self.x_offset, -cart_pose[0] + self.y_offset, cart_pose[2]]
 
         return pose
 
