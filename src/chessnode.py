@@ -26,8 +26,8 @@ class ChessBot:
         self.bot = InterbotixManipulatorXS("vx300s", "arm", "gripper")
         self.blackleft = blackleft
 
-        self.x_offset = 0.14
-        self.y_offset = -0.03#-0.06
+        self.x_offset = 0.16
+        self.y_offset = -0.04#-0.06
 
         # Initialize the listeners
         self.tf_listener = tf.TransformListener()
@@ -105,6 +105,8 @@ class ChessBot:
         # April tag has the y axis to be the length of the chessboard
         move = self.detector.get_move(im)
         if move is None:
+            im = self.get_cropped_image()
+            self.detector.update_start_image(im)
             return
 
         from_pose = self.square_to_cartesian(move[0])
@@ -157,28 +159,28 @@ class ChessBot:
         """
         self.bot.arm.go_to_home_pose()
         if capture_pose is not None:
-            self.bot.arm.set_ee_pose_components(x=capture_pose[0], y=capture_pose[1], z=0.15, roll=0.0, pitch=1.5)
+            self.bot.arm.set_ee_pose_components(x=capture_pose[0], y=capture_pose[1], z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
             self.bot.gripper.close(0)
-            self.bot.arm.set_ee_pose_components(x=capture_pose[0], y=capture_pose[1], z=0.06, roll=0, pitch=1.5)
-            self.bot.arm.set_ee_pose_components(x=capture_pose[0], y=capture_pose[1], z=0.15, roll=0.0, pitch=1.5)
+            self.bot.arm.set_ee_pose_components(x=capture_pose[0], y=capture_pose[1], z=0.06, roll=0, pitch=1.5, yaw=0.0)
+            self.bot.arm.set_ee_pose_components(x=capture_pose[0], y=capture_pose[1], z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
             # Remove the piece
-            self.bot.arm.set_ee_pose_components(x=0.3, y=0.3, z=0.15, roll=0.0, pitch=1.5)
+            self.bot.arm.set_ee_pose_components(x=0.3, y=0.3, z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
             self.bot.gripper.open(0.3)
             
 
 
 
-        self.bot.arm.set_ee_pose_components(x=from_pose[0], y=from_pose[1], z=0.15, roll=0.0, pitch=1.5)
+        self.bot.arm.set_ee_pose_components(x=from_pose[0], y=from_pose[1], z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
         self.bot.gripper.close(0)
-        self.bot.arm.set_ee_pose_components(x=from_pose[0], y=from_pose[1], z=0.06, roll=0, pitch=1.5)
-        self.bot.arm.set_ee_pose_components(x=from_pose[0], y=from_pose[1], z=0.15, roll=0.0, pitch=1.5)
+        self.bot.arm.set_ee_pose_components(x=from_pose[0], y=from_pose[1], z=0.06, roll=0, pitch=1.5, yaw=0.0)
+        self.bot.arm.set_ee_pose_components(x=from_pose[0], y=from_pose[1], z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
 
 
         # self.bot.arm.go_to_home_pose()
-        self.bot.arm.set_ee_pose_components(x=to_pose[0], y=to_pose[1], z=0.15, roll=0.0, pitch=1.5)
-        self.bot.arm.set_ee_pose_components(x=to_pose[0], y=to_pose[1], z=0.06, roll=0, pitch=1.5)
+        self.bot.arm.set_ee_pose_components(x=to_pose[0], y=to_pose[1], z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
+        self.bot.arm.set_ee_pose_components(x=to_pose[0], y=to_pose[1], z=0.06, roll=0, pitch=1.5, yaw=0.0)
         self.bot.gripper.open(0.3)
-        self.bot.arm.set_ee_pose_components(x=to_pose[0], y=to_pose[1], z=0.15, roll=0.0, pitch=1.5)
+        self.bot.arm.set_ee_pose_components(x=to_pose[0], y=to_pose[1], z=0.15, roll=0.0, pitch=1.5, yaw=0.0)
         self.bot.arm.go_to_home_pose()
         self.bot.arm.go_to_sleep_pose()
 

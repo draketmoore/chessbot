@@ -2,6 +2,7 @@
 import cv2
 import chess
 import chess.engine as engine
+from gpg import Data
 from apriltag_ros.srv import AnalyzeSingleImage
 from sensor_msgs.msg import Image, CameraInfo
 import rospy
@@ -9,6 +10,7 @@ from cv_bridge import CvBridge
 import numpy as np
 import random
 from stockfish import Stockfish
+from data_collector import Data_Collector
 """
 roslaunch realsense2_camera rs_camera.launch 
 roslaunch apriltag_ros continuous_detection.launch 
@@ -17,10 +19,13 @@ roslaunch interbotix_xsarm_control xsarm_control.launch robot_model:=vx300s
 
 class Chess_Detector:
 
-    def __init__(self, start_im, isblack):
+    def __init__(self, start_im, isblack, collect_data = True):
         self.start_im = start_im
         self.isblack = isblack
         self.board = chess.Board()
+        self.collect_data = collect_data
+        if self.collect_data:
+            self.collector = Data_Collector(self.isblack)
         cv2.imwrite("/home/river/Desktop/start.png", self.start_im)
         # self.engine = engine.SimpleEngine.popen_uci(r"/home/river/Downloads/stockfish_15_linux_x64_bmi2/stockfish_15_x64_bmi2")
         # self.stockfish = Stockfish(path=r"/home/river/Downloads/stockfish_15_linux_x64_bmi2/stockfish_15_x64_bmi2")
@@ -50,6 +55,7 @@ class Chess_Detector:
 
         dy = int(len(bdiff)/8)
         dx = int(len(bdiff[0])/8)
+        print(dx, dy)
         for y in range(8):
             for x in range(8):
                 square = bdiff[y*dy: (y+1)*dy, x*dx:(x+1)*dx]
@@ -102,6 +108,9 @@ class Chess_Detector:
         print(move)
         self.board.push_uci(move)
         print(self.board)
+
+        if self.collect_data:
+            self.collector.collect_data(self.board, im)
 
 
         int_move = self.get_engine_move()
