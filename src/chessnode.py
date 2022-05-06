@@ -26,8 +26,8 @@ class ChessBot:
         self.bot = InterbotixManipulatorXS("vx300s", "arm", "gripper")
         self.blackleft = blackleft
 
-        self.x_offset = 0.16
-        self.y_offset = -0.04#-0.06
+        self.x_offset = 0.14
+        self.y_offset = -0.028#-0.06
 
         # Initialize the listeners
         self.tf_listener = tf.TransformListener()

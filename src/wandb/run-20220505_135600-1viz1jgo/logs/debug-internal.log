@@ -1,0 +1,225 @@
+2022-05-05 13:56:01,221 INFO    MainThread:190144 [internal.py:wandb_internal():90] W&B internal server running at pid: 190144, started at: 2022-05-05 13:56:01.221432
+2022-05-05 13:56:01,223 INFO    WriterThread:190144 [datastore.py:open_for_write():75] open: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/run-1viz1jgo.wandb
+2022-05-05 13:56:01,224 DEBUG   SenderThread:190144 [sender.py:send():232] send: header
+2022-05-05 13:56:01,224 DEBUG   SenderThread:190144 [sender.py:send():232] send: run
+2022-05-05 13:56:01,372 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: check_version
+2022-05-05 13:56:01,373 INFO    SenderThread:190144 [dir_watcher.py:__init__():197] watching files in: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files
+2022-05-05 13:56:01,373 INFO    SenderThread:190144 [sender.py:_start_run_threads():811] run started: 1viz1jgo with start time 1651773360
+2022-05-05 13:56:01,373 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 13:56:01,373 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 13:56:01,373 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: check_version
+2022-05-05 13:56:01,409 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: run_start
+2022-05-05 13:56:01,417 DEBUG   HandlerThread:190144 [meta.py:__init__():35] meta init
+2022-05-05 13:56:01,417 DEBUG   HandlerThread:190144 [meta.py:__init__():49] meta init done
+2022-05-05 13:56:01,417 DEBUG   HandlerThread:190144 [meta.py:probe():209] probe
+2022-05-05 13:56:01,418 DEBUG   HandlerThread:190144 [meta.py:_setup_git():199] setup git
+2022-05-05 13:56:01,429 DEBUG   HandlerThread:190144 [meta.py:_setup_git():206] setup git done
+2022-05-05 13:56:01,430 DEBUG   HandlerThread:190144 [meta.py:_save_pip():53] save pip
+2022-05-05 13:56:01,430 DEBUG   HandlerThread:190144 [meta.py:_save_pip():67] save pip done
+2022-05-05 13:56:01,430 DEBUG   HandlerThread:190144 [meta.py:probe():247] probe done
+2022-05-05 13:56:01,442 DEBUG   SenderThread:190144 [sender.py:send():232] send: files
+2022-05-05 13:56:01,442 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-05-05 13:56:01,447 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:56:01,448 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:56:01,529 DEBUG   SenderThread:190144 [sender.py:send():232] send: telemetry
+2022-05-05 13:56:01,843 INFO    Thread-11 :190144 [upload_job.py:push():132] Uploaded file /tmp/tmp1jkadk0swandb/1ehxyrt1-wandb-metadata.json
+2022-05-05 13:56:02,375 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_created():244] file/dir created: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 13:56:02,375 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_created():244] file/dir created: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-metadata.json
+2022-05-05 13:56:02,376 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_created():244] file/dir created: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/requirements.txt
+2022-05-05 13:56:02,376 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_created():244] file/dir created: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 13:56:04,374 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 13:56:16,531 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:56:16,532 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:56:29,511 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:56:31,623 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:56:31,701 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:56:32,384 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/config.yaml
+2022-05-05 13:56:46,785 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:56:46,786 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:56:59,583 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:57:01,875 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:57:01,875 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:57:16,980 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:57:16,983 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:57:29,647 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:57:32,070 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:57:32,070 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:57:47,151 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:57:47,151 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:57:59,710 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:58:02,234 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:58:02,234 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:58:17,326 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:58:17,326 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:58:29,779 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:58:32,431 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:58:32,432 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:58:47,553 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:58:47,553 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:58:59,846 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:59:02,630 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:59:02,630 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:59:17,741 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:59:17,741 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:59:29,911 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 13:59:32,886 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:59:32,887 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:59:33,094 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 13:59:33,094 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 13:59:33,095 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 13:59:33,095 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 13:59:33,105 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 13:59:33,106 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 13:59:33,106 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 13:59:33,106 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 13:59:33,463 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 13:59:34,464 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 13:59:47,972 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 13:59:47,972 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 13:59:59,970 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:00:03,049 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:00:03,050 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:00:03,147 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:00:03,148 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:00:04,477 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 14:00:04,496 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:00:04,496 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:00:04,496 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:00:04,497 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:00:04,497 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:00:04,497 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:00:05,477 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 14:00:19,497 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:00:19,497 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:00:30,038 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:00:34,598 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:00:34,598 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:00:49,684 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:00:49,684 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:01:00,103 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:01:04,765 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:01:04,766 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:01:19,858 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:01:19,859 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:01:30,177 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:01:34,947 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:01:34,948 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:01:50,033 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:01:50,033 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:02:00,240 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:02:05,118 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:02:05,119 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:02:20,199 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:02:20,199 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:02:30,308 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:02:35,297 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:02:35,297 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:02:50,538 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:02:50,538 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:03:00,370 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:03:05,620 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:03:05,621 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:03:20,706 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:03:20,706 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:03:29,832 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:03:29,833 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:03:29,833 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:03:29,833 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:03:29,834 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:03:29,834 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:03:29,834 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:03:29,835 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:03:30,437 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:03:30,570 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 14:03:32,570 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 14:03:35,801 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:03:35,801 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:03:50,888 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:03:50,888 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:03:57,068 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:03:57,069 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:03:57,069 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:03:57,070 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:03:57,070 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:03:57,070 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:03:57,070 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:03:57,070 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:03:57,581 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 14:03:58,581 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 14:04:00,499 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:04:05,973 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:04:05,974 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:04:21,065 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:04:21,065 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:04:30,570 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:04:36,146 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:04:36,147 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:04:51,228 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:04:51,228 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:05:00,636 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:05:06,364 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:05:06,365 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:05:21,758 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:05:21,758 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:05:30,699 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:05:36,845 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:05:36,846 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:05:51,930 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:05:51,930 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:06:00,767 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:06:07,013 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:06:07,013 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:06:22,094 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:06:22,094 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:06:30,834 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:06:37,190 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:06:37,190 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:06:52,428 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:06:52,428 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:07:00,898 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:07:07,503 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:07:07,504 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:07:22,589 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:07:22,589 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:07:24,006 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:07:24,007 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:07:24,007 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:07:24,008 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:07:24,009 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:07:24,009 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:07:24,009 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:07:24,009 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:07:24,670 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 14:07:26,671 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 14:07:30,972 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:07:37,670 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:07:37,670 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:07:50,851 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:07:50,852 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:07:50,852 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:07:50,852 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: partial_history
+2022-05-05 14:07:50,853 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:07:50,853 DEBUG   SenderThread:190144 [sender.py:send():232] send: history
+2022-05-05 14:07:50,853 DEBUG   SenderThread:190144 [sender.py:send():232] send: summary
+2022-05-05 14:07:50,854 INFO    SenderThread:190144 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-05 14:07:51,681 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/wandb-summary.json
+2022-05-05 14:07:52,681 INFO    Thread-7  :190144 [dir_watcher.py:_on_file_modified():257] file/dir modified: /home/river/interbotix_ws/src/chessbot/src/wandb/run-20220505_135600-1viz1jgo/files/output.log
+2022-05-05 14:07:52,759 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:07:52,760 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:08:01,036 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:08:07,844 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:08:07,845 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:08:22,958 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:08:22,958 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:08:31,115 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:08:38,040 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:08:38,040 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:08:53,124 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:08:53,125 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:09:01,189 DEBUG   SenderThread:190144 [sender.py:send():232] send: stats
+2022-05-05 14:09:08,212 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:09:08,212 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:09:23,294 DEBUG   HandlerThread:190144 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-05 14:09:23,294 DEBUG   SenderThread:190144 [sender.py:send_request():246] send_request: stop_status
+2022-05-05 14:09:23,981 WARNING MainThread:190144 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2022-05-05 14:09:24,353 DEBUG   SenderThread:190144 [sender.py:send():232] send: telemetry

@@ -5,7 +5,7 @@ import string
 import random
 import os
 
-data_dir = '/home/river/interbotix_ws/src/chessbot/data'
+data_dir = '/home/river/interbotix_ws/src/chessbot/data/val'
 
 
 class Data_Collector:

@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.13.0-40-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-05-05T18:09:51.398210",
+    "startedAt": "2022-05-05T18:09:50.598207",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "classifier.py",
+    "codePath": "src/classifier.py",
+    "git": {
+        "remote": "git@github.com:draketmoore/chessbot.git",
+        "commit": "e5440b938c7b02324eb05e24794a4b3a9027385c"
+    },
+    "email": "drakem@gmail.com",
+    "root": "/home/river/interbotix_ws/src/chessbot",
+    "host": "River-LAB",
+    "username": "river",
+    "executable": "/usr/bin/python3"
+}
