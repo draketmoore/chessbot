@@ -23,7 +23,7 @@ and the resulting legal chess move can be registered into the chess backend.
 
 This system only works when the game begins from a known board state. In order to gain more flexibility,
 I saved the image of each chess square after every move and used it to train an image classifier in order to systematically detect what piece resides on each
-chess square for any board state.
+chess square for any board state. Code available in "image_classifier" branch.
 
 ## Manipulation
 By controlling the robot arm to operate in a crane-like movement, I was able to avoid unwanted contact with any surrounding pieces and perform each move correctly.
